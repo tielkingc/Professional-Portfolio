@@ -1,3 +1,9 @@
+:root {
+  --background-color: #60b9ce;
+  --foreground-color: #015367;
+  --text-color: #ffc540;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,13 +21,16 @@ header {
   background-attachment: fixed;
   background-position: 80%;
   z-index: 9999;
+  background-color: var(--background-color);
 }
 
 header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
-  color: var(--primary-color);
+  color: var(--text-color);
+  background: var(--foreground-color);
+  padding: 10px 15px;
 }
 
 header a {
@@ -41,9 +50,12 @@ header nav ul {
 }
 
 header nav ul li a {
+  margin: 0 5px;
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  color: var(--text-color);
+  background: var(--foreground-color);
 }
 
 /*header nav ul li a:hover {
@@ -53,3 +65,25 @@ header nav ul li a {
   text-shadow: none;
 }
 */
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.pro1 {
+  padding: 15px 15px;
+}
+.project-grid {
+  margin-right: 0;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-grid div {
+  flex: 45%;
+  margin-top: -5px;
+  padding-top: 20px;
+}

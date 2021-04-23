@@ -70,14 +70,15 @@ header nav ul li a {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-color: blue;
 }
 
 .pro1 {
-  padding: 15px 15px;
+  padding: 15px 15px 15px 10px;
 }
 .project-grid {
   margin-right: 0;
-  width: 50%;
+  width: 47%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -86,4 +87,14 @@ header nav ul li a {
   flex: 45%;
   margin-top: -5px;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+  .responsive {
+    width: 340px;
+  }
+  .responsive1 {
+    width: 540px;
+    height: 450px;
+  }
 }

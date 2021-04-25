@@ -65,6 +65,9 @@ header nav ul li a {
   text-shadow: none;
 }
 */
+.bio p {
+  width: 35%;
+}
 .projects {
   display: flex;
   justify-content: center;

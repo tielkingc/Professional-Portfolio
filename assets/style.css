@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--background-color);
-  width: 100%;
+  /*width: 100% !important;*/
 }
 
 header h1 {
@@ -81,6 +81,7 @@ header nav ul li a {
   margin-left: 10px;
   padding-left: 10px;
   border-left: 5px solid black;
+  font-size:x-large;
 }
 .projects {
   display: flex;
@@ -106,8 +107,33 @@ header nav ul li a {
   padding-top: 20px;
 }
 
+.responsive1 {
+  width: 640px;
+  height: 580px;
+}
+
 footer {
   background-color: var(--text-color);
+  text-align: center;
+  padding: 25px 0;
+}
+
+.contact-me {
+  margin: 0 25%;
+}
+
+.contact-me ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  
+}
+
+footer ul li {
+  padding: 0 25px;
+  font-size: large;
 }
 
 @media screen and (max-width: 1500px) {
@@ -121,6 +147,9 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
+  body {
+    width: 100%;
+  }
   header {
     padding-bottom: 10px;
     justify-content: center;
@@ -130,12 +159,14 @@ footer {
   header h1 {
     width: 100%;
     text-align: center;
+    background-color: pink;
   }
 
   header nav ul {
     margin-top: 20px;
     width: 100%;
     justify-content: center;
+    background-color: red;
   }
 
   header nav ul li a {
@@ -178,6 +209,11 @@ footer {
   .bio-pic {
     height: 120px;
     width: 120px;
+  }
+
+  header {
+    margin: 0;
+    
   }
 
 }

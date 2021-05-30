@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --background-color: #60b9ce;
   --foreground-color: #015367;
   --text-color: #ffc540;
@@ -20,7 +20,6 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: var(--background-color);
-  /*width: 100% !important;*/
 }
 
 header h1 {
@@ -57,13 +56,7 @@ header nav ul li a {
   background: var(--foreground-color);
 }
 
-/*header nav ul li a:hover {
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  border-radius: 15px;
-  text-shadow: none;
-}
-*/
+
 
 .about-me {
   width: 65%;
@@ -216,4 +209,14 @@ footer ul li {
     
   }
 
+}*/
+
+.nav-item {
+  border-radius: 5px;
+  margin: 0 60px;
+  
+}
+
+a:visited {
+  color: black;
 }
